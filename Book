@@ -1,0 +1,43 @@
+/**
+ * making up things to make books happen
+ * 
+ * @author STEVEN THOMPSON
+ * @version 1/25/16
+ */
+public class Book
+{
+   
+    private String Title;
+    private int Copies;
+    private double Cost;
+    
+    public Book(String inTitle, int inCopies, double inCost )
+    {
+        Title = inTitle;
+        Copies = inCopies;
+        Cost = inCost;
+        
+    }
+    public String getTitle()
+    {
+        return Title;
+    }
+    public int getCopies()
+    {
+        return Copies;
+    }
+    public double getCost()
+    {
+        return Cost;
+    }
+    //Takes copies multiplied by cost
+   public double totalValue()
+   {
+       double totalValue;
+       totalValue = Copies * Cost;
+       return totalValue;
+    } 
+}
+
+
+
