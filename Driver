@@ -1,0 +1,21 @@
+# inlab2
+
+/**
+ * telling books and their cost and amount
+ * 
+ * @author STEVEN THOMPSON
+ * @version 1/25/16
+ */
+public class Driver
+{
+    public static void main(String[] args)
+    {
+        //Naming 
+        Book book1 = new Book("Dracula", 22, 7.55);
+        Book book2 = new Book("Coding", 12, 6.66);
+        //printing 
+        System.out.println( "The book " + book1.getTitle() + " has " + book1.getCopies() + " copies in stock and it costs $"  + book1.getCost());
+        //adding total and printing 
+        System.out.println( book2.getCopies() + " Copies of book " + book2.getTitle() + " at " + book2.getCost() + " per book means total value of " + book2.totalValue());
+    }
+}
